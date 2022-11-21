@@ -3,25 +3,23 @@
 		<title>Zahlenprüfer</title>
 		
 		
-		<script>
+	<script>
 			"use strict";
-			
 			function fMod() {
+				
 				    var vZahl;
 					var vAusgabeHtml="";
 					
 				document.getElementById("idZahl").innerHTML=vZahl;	
 				
+				vAusgabeHtml = vAusgabeHtml + "Die Zahl: ";
+				vAusgabeHtml = vAusgabeHtml + vZahl;
+
 				if (vZahl %2 == 0) {
-					vAusgabeHtml = vAusgabeHtml + "Die Zahl: "
-					vAusgabeHtml = vAusgabeHtml + vZahl
 					vAusgabeHtml = vAusgabeHtml + "ist gerade!"
 				} else {
-					vAusgabeHtml = vAusgabeHtml + "Die Zahl: "
-					vAusgabeHtml = vAusgabeHtml + vZahl
 					vAusgabeHtml = vAusgabeHtml + "ist ungerade!"
-				}
-					
+				}	
 					
 		
 			
@@ -29,7 +27,7 @@
 			
 			}
 		
-		</script>
+	</script>
 	
 		</head><body>
 		<img src="Zahlenlogo.jpg" height="120px" width="400px"><br><br> 
